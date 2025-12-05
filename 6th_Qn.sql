@@ -1,3 +1,5 @@
+-- List of employees from departments with more than 2 employees
+
 CREATE TABLE employees (
     emp_id INT PRIMARY KEY,
     emp_name VARCHAR(50),
@@ -22,3 +24,4 @@ WHERE e.dept_id IN (
     GROUP BY dept_id
     HAVING COUNT(*) > 2
 );
+
