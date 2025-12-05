@@ -1,3 +1,5 @@
+-- Departments where total salary > total salary of IT department
+
 CREATE TABLE employee_details (
     emp_id INT,
     emp_name VARCHAR(50),
@@ -26,3 +28,4 @@ HAVING SUM(salary) > (
     FROM employee_details
     WHERE dept_name = 'IT'
 );
+
