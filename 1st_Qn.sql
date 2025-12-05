@@ -1,3 +1,5 @@
+-- Departments having employees more than HR department count
+
 CREATE TABLE employee_details (
     emp_id INT,
     emp_name VARCHAR(50),
@@ -26,3 +28,4 @@ HAVING COUNT(*) > (
     FROM employee_details
     WHERE dept_name = 'HR'
 );
+
