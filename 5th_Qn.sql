@@ -1,3 +1,5 @@
+-- Employees who earn same salary as others
+
 CREATE TABLE employees (
     emp_id INT PRIMARY KEY,
     emp_name VARCHAR(50),
@@ -20,3 +22,4 @@ WHERE e.salary IN (
     GROUP BY salary
     HAVING COUNT(*) > 1
 );
+
