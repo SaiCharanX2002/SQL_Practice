@@ -1,3 +1,5 @@
+-- Employees who are having highest salary in a company
+
 CREATE TABLE employees (
     emp_id INT PRIMARY KEY,
     emp_name VARCHAR(50),
@@ -16,3 +18,4 @@ INSERT INTO employees (emp_id, emp_name, dept_name, salary) VALUES
 SELECT *
 FROM employees
 WHERE salary = (SELECT MAX(salary) FROM employees);
+
