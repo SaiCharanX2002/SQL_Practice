@@ -1,3 +1,5 @@
+-- Employees who are having salary more than average salary of their department
+
 CREATE TABLE employees (
     emp_id INT PRIMARY KEY,
     emp_name VARCHAR(50),
@@ -22,3 +24,4 @@ WHERE e.salary > (
     FROM employees e2
     WHERE e2.dept_id = e.dept_id
 );
+
