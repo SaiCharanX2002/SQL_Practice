@@ -1,3 +1,5 @@
+-- Departments whose total salary is more than 25
+
 CREATE TABLE employee_details (
     emp_id INT,
     emp_name VARCHAR(50),
@@ -25,3 +27,4 @@ SELECT dept_name
 FROM employee_details
 GROUP BY dept_id, dept_name
 HAVING SUM(salary) > 25;
+
