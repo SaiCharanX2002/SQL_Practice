@@ -1,3 +1,5 @@
+-- Second highest salary from employee table
+
 CREATE TABLE employees (
     emp_id INT PRIMARY KEY,
     emp_name VARCHAR(50),
@@ -19,4 +21,5 @@ WHERE salary = (
     FROM employees
     WHERE salary < (SELECT MAX(salary) FROM employees)
 );
+
 
